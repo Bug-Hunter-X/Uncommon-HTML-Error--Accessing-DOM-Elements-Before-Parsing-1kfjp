@@ -1,0 +1,1 @@
+This repository demonstrates a subtle error in HTML that might arise when dealing with DOM manipulation and the order of execution.  The problem occurs when trying to access an element before the browser has completely parsed it. This can lead to unexpected behavior. The solution demonstrates a correct method to prevent this issue.
