@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Incorrectly attempting to access the element before it's fully parsed
+    // This can lead to 'myDiv' being undefined, especially if the script
+    // is placed in the <head> instead of the <body>
+    document.getElementById("myDiv").innerHTML = "Text changed."; 
+  </script>
+</body>
+</html>
